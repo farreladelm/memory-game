@@ -1,10 +1,12 @@
 # Match Card Game
 
-**Description**
+### Description
 
 - **Overview:** A simple browser-based matching card game built with React, TypeScript and Vite. Players flip cards to find matching pairs before the timer runs out. Correct matches award points; incorrect matches deduct time.
 
-**Technologies**
+---
+
+### Technologies
 
 - **Framework:** React 18 + TypeScript
 - **Build:** Vite
@@ -13,7 +15,9 @@
 - **Package manager:** pnpm (recommended)
 - **Icons:** react-icons (optional)
 
-**Features**
+---
+
+### Features
 
 - **Start screen:** Title, rules, and a Start button (`src/components/StartPage.tsx`).
 - **Game board:** Responsive grid of cards (`src/components/Game.tsx`).
@@ -23,14 +27,18 @@
 - **Transient UI indicators:** brief +/− indicators beside score and time when they change.
 - **End state:** Win screen when all pairs matched or time runs out.
 
-**Process (how this was built)**
+---
+
+### Process (how this was built)
 
 - Scaffolded with Vite using the React + TypeScript template.
 - Tailwind CSS was added and configured (class-based dark mode enabled in `tailwind.config.cjs`).
 - App structured into components (`StartPage`, `Game`, `Card`) and a custom hook (`useGame`) that contains the game logic.
 - Added WebAudio-based helper functions to create simple sound effects without external assets.
 
-**How to run (development)**
+---
+
+### How to run (development)
 
 - Install dependencies:
 
@@ -46,7 +54,9 @@ pnpm run dev
 
 - Open the app in the browser at the URL printed by Vite (usually `http://localhost:5173`).
 
-**Key files**
+---
+
+### Key files
 
 - `src/hooks/useGame.ts` — game state and logic (deck creation, flip/match rules, scoring, timer, transient deltas).
 - `src/components/StartPage.tsx` — start UI.
@@ -54,7 +64,9 @@ pnpm run dev
 - `src/components/Card.tsx` — card flip presentation.
 - `src/utils/sound.ts` — WebAudio helpers for flip/match/mismatch sounds.
 
-**Notes & tips**
+---
+
+### Notes & tips
 
 - First user interaction may be required to enable audio in some browsers.
 - Change card faces by editing the emoji list in `src/components/Game.tsx` or replace with image URLs.
